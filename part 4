@@ -1,1 +1,46 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+int fib_seq(int &a, int &b);
+int fib(int r);
 
+
+int main(){
+	/*int a = 3;
+	int b = 5;
+	int answer = 0;                                                       all this was for testing purposes
+	answer = fib_seq(a, b);
+	cout << "answer: " << answer << "a: " << a << "b: " << b;
+	int response;
+	int answer;
+	cout << "Which number do you want? \n";
+	cin >> response;
+	answer = fib(response);
+	cout << "That number is " << answer << endl;
+	// system("pause");
+	return 0;
+}
+
+int fib(int response){
+	int num1 = 0;
+	int num2 = 1;
+	int sum = 0;
+	if (response == 1)
+		sum = 1;
+	else{
+		for (int i = 1; i < response; i++){
+			sum = fib_seq(num1, num2);
+
+		}
+	}
+	return sum;
+}
+
+int fib_seq(int &a, int &b){
+	int sum = 0;
+	sum = a + b;
+	a = b;
+	b = sum;
+	return sum;
+}
