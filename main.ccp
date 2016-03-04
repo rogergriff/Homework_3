@@ -5,9 +5,9 @@
 /*call our other header files here.*/
 /*----*/
 /*calling namespaces*/
-using std::cout;
+/*using std::cout;
 using std::cin;
-using std::string;
+using std::string;*/
 /*----*/
 int main() {
 }
