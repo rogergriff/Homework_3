@@ -4,6 +4,7 @@ using std::cin;
 using std::endl;
 int fib_seq(int &a, int &b);
 int fib(int r);
+int pow(int p, int& e);
 
 
 int main(){
@@ -18,6 +19,17 @@ int main(){
 	cin >> response;
 	answer = fib(response);
 	cout << "That number is " << answer << endl;
+	
+	int number = 0;
+	int power = 0;
+	int answer2 = 0;
+
+	cout << "Moving on to power. What number do you want raised to what power\n(use format [number space power])" << endl;
+	cin >> number;
+	cin >> power;
+	answer2 = pow(number, power); // original call
+	cout << "That comes out to " << answer2 << endl;
+	
 	// system("pause");
 	return 0;
 }
@@ -44,3 +56,14 @@ int fib_seq(int &a, int &b){
 	b = sum;
 	return sum;
 }
+
+int pow(int p, int& e){
+	e = --e; // making e act as a counter
+	int temp_p = 0;
+	int answer = p;  // so temp_p will be set properly when it gets to its final go through and e finally equals 0.
+	while (e >= 1){
+		temp_p = pow(p, e);  // recurssive call
+		answer = temp_p * p;
+		cout << "it went through me" << endl;
+	}
+	return answer;
