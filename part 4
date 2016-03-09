@@ -2,24 +2,19 @@
 using std::cout;
 using std::cin;
 using std::endl;
-int fib_seq(int &a, int &b);
 int fib(int r);
-int pow(int p, int& e);
+int pow(int p, int e);
 
 
 int main(){
-	/*int a = 3;
-	int b = 5;
-	int answer = 0;                                                       all this was for testing purposes
-	answer = fib_seq(a, b);
-	cout << "answer: " << answer << "a: " << a << "b: " << b; */
-	int response;
-	int answer;
-	cout << "Which number do you want? \n";
+	int response = 0;
+	int answer = 0;
+	cout << "Which number of the Fibonnaci Sequence do you want? \n";
 	cin >> response;
-	answer = fib(response);
+	answer = fib(response);  //original call
 	cout << "That number is " << answer << endl;
-	
+
+
 	int number = 0;
 	int power = 0;
 	int answer2 = 0;
@@ -29,49 +24,26 @@ int main(){
 	cin >> power;
 	answer2 = pow(number, power); // original call
 	cout << "That comes out to " << answer2 << endl;
+
 	
-	// system("pause");
+	
+	
+	system("pause");
 	return 0;
 }
 
-int fib(int response){
-	int num1 = 0;
-	int num2 = 1;
-	int sum = 0;
-	if (response == 1)
-		sum = 1;
-	else{
-		for (int i = 1; i < response; i++){
-			sum = fib_seq(num1, num2);
-
-		}
-	}
-	return sum;
-
-
 int fib(int n){
-if (n == 1)
-	return 1;
-if (n == 2)
-	return 1;
-return fib(n-1) + fib(n-2);
-
-/*int fib_seq(int &a, int &b){
-	int sum = 0;
-	sum = a + b;
-	a = b;
-	b = sum;
-	return sum;
+	if (n == 1)
+		return 1;
+	if (n == 2)
+		return 1;
+	return fib(n - 1) + fib(n - 2); // recursive call
 }
 
-int pow(int p, int& e){
-	e = --e; // making e act as a counter
-	int temp_p = 0;
-	int answer = p;  // so temp_p will be set properly when it gets to its final go through and e finally equals 0.
-	while (e >= 1){
-		temp_p = pow(p, e);  // recurssive call
-		answer = temp_p * p;
-		cout << "it went through me" << endl;
-	}
-	return answer;
-*/
+
+int pow(int base, int exp){
+	--exp;
+	if (exp == 0)
+		return base;
+	return base * pow(base, exp);  //recursive case
+} 
