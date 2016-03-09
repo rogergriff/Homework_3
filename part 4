@@ -47,9 +47,16 @@ int fib(int response){
 		}
 	}
 	return sum;
-}
 
-int fib_seq(int &a, int &b){
+
+int fib(int n){
+if (n == 1)
+	return 1;
+if (n == 2)
+	return 1;
+return fib(n-1) + fib(n-2);
+
+/*int fib_seq(int &a, int &b){
 	int sum = 0;
 	sum = a + b;
 	a = b;
@@ -67,3 +74,4 @@ int pow(int p, int& e){
 		cout << "it went through me" << endl;
 	}
 	return answer;
+*/
