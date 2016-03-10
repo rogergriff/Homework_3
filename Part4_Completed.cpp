@@ -1,5 +1,6 @@
 #include <iostream>
-#include <cmath>
+#include <cmath>      //for abs()
+#include <ctype.h>    //for tolower
 using std::cout;
 using std::cin;
 using std::endl;
