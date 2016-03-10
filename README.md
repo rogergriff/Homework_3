@@ -5,3 +5,10 @@ if we wanna add anyone, lemme know who they are and their github username and i'
 
 
 if you change something, it would be great if we keep a copy of the old one, so just like comment it out. if you dont do this, i'll take you off the collaborator's list and you'll have to start doing it via pull request.
+
+Labeling what all has to be done
+Part 1(TODO)
+Part 2(TODO)      Brandon and Jay-Jay are supposedly gonna still combine all three parts into one.
+Part 3(TODO)
+Part 4
+Part 5(TODO)
