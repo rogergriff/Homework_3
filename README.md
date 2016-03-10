@@ -8,7 +8,15 @@ if you change something, it would be great if we keep a copy of the old one, so 
 
 Labeling what all has to be done
 Part 1(TODO)
+
+
 Part 2(TODO)      Brandon and Jay-Jay are supposedly gonna still combine all three parts into one.
+
+
 Part 3(TODO)
+
+
 Part 4
+
+
 Part 5(TODO)
