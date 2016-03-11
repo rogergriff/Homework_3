@@ -20,7 +20,7 @@ int pow_iter(int base, int exp) {
 	return sum;
 }
 
-int tri_itter(int n) {
+int tri_iter(int n) {
 	int sum = 0;
 	if (n == 0)
 		return 0;
@@ -29,7 +29,7 @@ int tri_itter(int n) {
 	return sum;
 }
 
-int gcd_itter(int num1, int num2) {
+int gcd_iter(int num1, int num2) {
 	if (num1 < 0 || num2 < 0) {
 		num1 = abs(num1);
 		num2 = abs(num2);
