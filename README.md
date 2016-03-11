@@ -12,7 +12,7 @@ Part 1(TODO)      Jay
 
 Part 2(TODO)      Brandon
 
-Part 3(TODO)      John
+Part 3
 
 Part 4
 
