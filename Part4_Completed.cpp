@@ -1,16 +1,3 @@
-#include <iostream>
-#include <cmath>      //for abs()
-#include <ctype.h>    //for tolower
-using std::cout;
-using std::cin;
-using std::endl;
-int fib(int r);
-int pow(int p, int e);
-int tri(int n);
-void drawTri(int n);
-int gcd(int a, int b);
-
-
 int fib(int n){
 	if (n == 1)
 		return 1;
