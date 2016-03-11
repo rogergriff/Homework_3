@@ -1,1 +1,31 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <map>
 
+
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::map;
+using std::string;
+
+
+
+
+int main() {
+
+	{
+		map<string, int> inventory = { { "sword", 25 },{ "bow", 15 },{ "shield", 25 }, { "arrows", 2 }, {"armor", 40 } };
+		// m["phi"] = 1.61803;
+
+		for (std::pair<string, int> e : inventory)
+			cout << e.first << " equals " << e.second << "\n" << endl;
+	}
+
+	system("pause");
+	return 0;
+
+
+}
