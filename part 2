@@ -15,7 +15,7 @@ private:
 	static const bool isNpc = true;
 	static const bool hasSocialSkills = false;
 public:
-	Monster() {
+	Monster(T data) {
 
 		Monster::health = rand() % 100 + 1;
 		Monster::dex = rand() % 10 + 1;
