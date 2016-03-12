@@ -10,7 +10,7 @@ Labeling what all has to be done
 
 Part 1: Done
 
-Part 2(TODO)      Brandon
+Part 2: done
 
 Part 3
 
