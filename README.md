@@ -8,7 +8,7 @@ if you change something, it would be great if we keep a copy of the old one, so 
 
 Labeling what all has to be done
 
-Part 1(TODO)      Jay
+Part 1: Done
 
 Part 2(TODO)      Brandon
 
